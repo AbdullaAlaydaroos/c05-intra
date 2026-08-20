@@ -6,7 +6,7 @@
 /*   By: abalayda <abalayda@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/19 15:58:49 by abalayda          #+#    #+#             */
-/*   Updated: 2026/08/19 16:01:23 by abalayda         ###   ########.fr       */
+/*   Updated: 2026/08/20 14:03:58 by abalayda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(void)
 	int	i;
 
 	i = -1;
-	while (i < 10)
+	while (i <= 12)
 	{
 		printf("%d: %d\n", i, ft_recursive_factorial(i));
 		i++;
