@@ -6,7 +6,7 @@
 /*   By: abalayda <abalayda@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 10:35:12 by abalayda          #+#    #+#             */
-/*   Updated: 2026/08/20 10:37:38 by abalayda         ###   ########.fr       */
+/*   Updated: 2026/08/20 17:13:41 by abalayda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,28 +36,3 @@ static int	ft_is_prime(int nb)
 	}
 	return (1);
 }
-
-/*
-#include <stdio.h>
-
-int	ft_find_next_prime(int nb);
-
-int	main(void)
-{
-	int	i;
-
-	i = -10000;
-	printf("%d: %d\n", i, ft_find_next_prime(i));
-	i = 0;
-	printf(" %d: %d\n", i, ft_find_next_prime(i));
-	i = 42;
-	printf(" %d: %d\n", i, ft_find_next_prime(i));
-	i = 67;
-	printf(" %d: %d\n", i, ft_find_next_prime(i));
-	i = 10000;
-	printf(" %d: %d\n", i, ft_find_next_prime(i));
-	i = 2000000000;
-	printf(" %d: %d\n", i, ft_find_next_prime(i));
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: abalayda <abalayda@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 10:43:18 by abalayda          #+#    #+#             */
-/*   Updated: 2026/08/20 11:12:51 by abalayda         ###   ########.fr       */
+/*   Updated: 2026/08/20 17:13:48 by abalayda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,15 +65,3 @@ static int	is_safe(int r, int c, char *board)
 	}
 	return (1);
 }
-
-/*
-#include <stdio.h>
-
-int	ft_ten_queens_puzzle(void);
-
-int	main(void)
-{
-	printf("%d\n", ft_ten_queens_puzzle());
-	return (0);
-}
-*/
