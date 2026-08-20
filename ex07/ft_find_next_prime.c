@@ -1,0 +1,63 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abalayda <abalayda@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/08/20 10:35:12 by abalayda          #+#    #+#             */
+/*   Updated: 2026/08/20 10:37:38 by abalayda         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+static int	ft_is_prime(int nb);
+
+int	ft_find_next_prime(int nb)
+{
+	if (nb < 2)
+		return (2);
+	while (!(ft_is_prime(nb)))
+		nb++;
+	return (nb);
+}
+
+static int	ft_is_prime(int nb)
+{
+	long long	divisor;
+
+	if (nb < 2)
+		return (0);
+	divisor = 2;
+	while (divisor * divisor < nb)
+	{
+		if (nb % divisor == 0)
+			return (0);
+		divisor++;
+	}
+	return (1);
+}
+
+/*
+#include <stdio.h>
+
+int	ft_find_next_prime(int nb);
+
+int	main(void)
+{
+	int	i;
+
+	i = -10000;
+	printf("%d: %d\n", i, ft_find_next_prime(i));
+	i = 0;
+	printf(" %d: %d\n", i, ft_find_next_prime(i));
+	i = 42;
+	printf(" %d: %d\n", i, ft_find_next_prime(i));
+	i = 67;
+	printf(" %d: %d\n", i, ft_find_next_prime(i));
+	i = 10000;
+	printf(" %d: %d\n", i, ft_find_next_prime(i));
+	i = 2000000000;
+	printf(" %d: %d\n", i, ft_find_next_prime(i));
+	return (0);
+}
+*/
